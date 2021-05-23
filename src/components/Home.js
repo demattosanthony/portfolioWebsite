@@ -14,10 +14,22 @@ function Home() {
           <Buttons>
             <ResumeBtn>Resume</ResumeBtn>
             <GitHubBtn>
-              <img src="/githubLogo.png" alt="" />
+              <a
+                href="https://github.com/demattosanthony?tab=repositories"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/githubLogo.png" alt="" />
+              </a>
             </GitHubBtn>
             <LinkedInBtn>
-              <img src="/linkedInLogo.png" alt="" />
+              <a
+                href="https://www.linkedin.com/in/ademattos/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/linkedInLogo.png" alt="" />
+              </a>
             </LinkedInBtn>
           </Buttons>
         </MetaData>
@@ -42,11 +54,11 @@ const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/abstract-technology-background-background-3d-grid-cyber-technology-ai-tech-wire-network-futuristic-wireframe-artificial-intelligence-cyber-security-background-vector.webp");
+  background-image: url("/home-background.png");
 `;
 
 const Content = styled.div`
-  height: 89%;
+  height: 88%;
   display: flex;
 
   @media (max-width: 900px) {
@@ -65,6 +77,7 @@ const MetaData = styled.div`
 
   @media (max-width: 900px) {
     padding-top: 30px;
+    padding-left: 0px;
   }
 
   @media (max-width: 1200px) {
@@ -77,12 +90,14 @@ const Name = styled.div`
   text-align: center;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
 `;
 
 const Description = styled.div`
   text-align: center;
   padding-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   font-family: -apple-system-body;
 `;
@@ -135,6 +150,8 @@ const ProfileImg = styled.div`
   padding-top: 15vh;
   padding-left: 100px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 
   img {
     height: 450px;
@@ -168,9 +185,10 @@ const DownArrow = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   img {
     height: 40px;
     overflow-x: hidden;

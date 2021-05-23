@@ -15,3 +15,13 @@
     transform: translateY(3px);
   }
 }
+
+@font-face {
+  font-family: "Billabong2";
+  src: local("Billabong"), url(./fonts/Billabong.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "leftist";
+  src: local("lefist"), url(./fonts/LeftistMonoSerif.ttf) format("truetype");
+}
