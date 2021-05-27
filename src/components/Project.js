@@ -1,63 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 
-function Project() {
+function Project({ title, description, buttons, preview }) {
   return (
     <Container>
       <Content>
         <ProjDescContainer>
-          <Title>
-            <img src="/perspective/app_logo.png" alt="" />
-            Perspective Albums
-          </Title>
+          {title}
 
-          <Description>
-            Perspective Albums makes sharing photos with friends and family
-            simple. Create and join albums to see everyone's perspective of the
-            particular occasion. Perfect for weddings, birthdays, vacations, and
-            much more.
-            <br />
-            <br />
-            The goal of this project was to gain experiance building/deploying a
-            full stack mobile and web application that provide purpose to end
-            users.
-            <br />
-            <br />
-            <h2>Technologies:</h2>
-            <br />
-            Flutter, React JS, Node.js (Express), Postgresql, Digital Ocean
-          </Description>
+          <Description>{description}</Description>
 
-          <Links>
-            <VisitWebSite
-              href="https://perspective-3adcf.web.app/login"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit Website
-            </VisitWebSite>
-
-            <a
-              href="https://apps.apple.com/us/app/perspective-albums/id1547366416#?platform=iphone"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AppStoreLogo src="/appStore.png" />
-            </a>
-          </Links>
+          <Links>{buttons}</Links>
         </ProjDescContainer>
 
-        <ProjectPreview>
-          <GifContainer>
-            <img src="/perspective/perspec.gif" alt="" />
-          </GifContainer>
-
-          <MobileImages>
-            <img src="/perspective/myAlbumsPage.png" alt="" />
-            <img src="/perspective/albumPage2.png" alt="" />
-            <img src="/perspective/profilePage.png" alt="" />
-          </MobileImages>
-        </ProjectPreview>
+        <ProjectPreview>{preview}</ProjectPreview>
       </Content>
     </Container>
   );
@@ -104,21 +60,6 @@ const ProjDescContainer = styled.div`
   }
 `;
 
-const Title = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 75px;
-  font-family: Billabong2;
-  color: white;
-
-  img {
-    height: 75px;
-    width: 75px;
-    margin-right: 20px;
-  }
-`;
-
 const Description = styled.div`
   margin-top: 25px;
   width: 500px;
@@ -140,34 +81,6 @@ const Links = styled.div`
   align-items: center;
 `;
 
-const VisitWebSite = styled.a`
-  border: 1px solid #438afe;
-  border-radius: 50px;
-  padding: 12px;
-  transition: all 250ms;
-  margin-right: 15px;
-  font-size: 22px;
-  text-decoration: none;
-  color: #438afe;
-
-  :hover {
-    background-color: #438afe;
-    color: white;
-    transform: scale(1.05);
-  }
-`;
-
-const AppStoreLogo = styled.img`
-  width: 175px;
-  object-fit: scale-down;
-  cursor: pointer;
-  transition: all 250ms;
-
-  :hover {
-    transform: scale(1.05);
-  }
-`;
-
 const ProjectPreview = styled.div`
   margin-left: 50px;
   margin-right: 10px;
@@ -177,35 +90,11 @@ const ProjectPreview = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  contain: strict;
+  /* contain: strict; */
 
   @media (max-width: 900px) {
     width: 100%;
     margin-left: 0px;
     contain: none;
-  }
-`;
-
-const GifContainer = styled.div`
-  width: 90%;
-  border-radius: 10px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    object-fit: scale-down;
-  }
-`;
-
-const MobileImages = styled.div`
-  display: flex;
-  margin-top: 10px;
-  width: 100%;
-
-  img {
-    height: 350px;
-    width: 30%;
-    margin: 10px;
-    object-fit: scale-down;
   }
 `;

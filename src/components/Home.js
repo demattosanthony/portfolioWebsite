@@ -125,6 +125,7 @@ const ResumeBtn = styled.div`
   border: 1px solid #d3d3d3;
   letter-spacing: 1px;
   font-size: 14px;
+  transition: all 250ms;
 
   &:hover {
     transform: scale(1.06);
