@@ -11,6 +11,7 @@ function OSDesc() {
       information available within an app will be addressed.
       <br />
       <br />
+      <br />
       <h2>Technologies:</h2>
       <br />
       Python, Pytorch, OpenCV, Jupyter Notebook, Flutter/Dart
