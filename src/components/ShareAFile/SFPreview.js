@@ -3,15 +3,20 @@ import styled from "styled-components";
 
 function SFPreview() {
   return (
-    <div>
+    <Wrap>
       <GifContainer>
         <img src="/shareAFile/shareAFile.gif" alt="" />
       </GifContainer>
-    </div>
+    </Wrap>
   );
 }
 
 export default SFPreview;
+
+const Wrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 const GifContainer = styled.div`
   width: 100%;
@@ -24,6 +29,14 @@ const GifContainer = styled.div`
   }
 
   @media (max-width: 900px) {
-    width: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: red;
+
+    img {
+      width: 100%;
+    }
   }
 `;

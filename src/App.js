@@ -5,6 +5,7 @@ import Project from "./components/Project";
 import Title from "./components/Title";
 import SourceCodeBtn from "./components/SourceCodeBtn";
 import VisitWebsiteBtn from "./components/VisitWebsiteBtn";
+import AppStoreBtn from "./components/AppStoreBtn";
 
 import PerDescription from "./components/Perspective/PerDescription";
 import PerPreview from "./components/Perspective/PerPreview";
@@ -15,6 +16,9 @@ import OSPreview from "./components/OpenSpot/OSPreview";
 
 import SFDesc from "./components/ShareAFile/SFDesc";
 import SFPreview from "./components/ShareAFile/SFPreview";
+
+import HBDesc from "./components/HBEvents/HBDesc";
+import HBPreview from "./components/HBEvents/HBPreview";
 
 function App() {
   return (
@@ -33,7 +37,7 @@ function App() {
         preview={<PerPreview />}
       />
       <Project
-        title={<Title title="Open Spot Parking" />}
+        title={<Title title="Open Spot Parking" fontFamily="leftist" />}
         description={<OSDesc />}
         buttons={
           <SourceCodeBtn link="https://github.com/demattosanthony/carNocar" />
@@ -45,6 +49,20 @@ function App() {
         description={<SFDesc />}
         buttons={<VisitWebsiteBtn link="https://share-a-file.web.app" />}
         preview={<SFPreview />}
+      />
+      <Project
+        title={
+          <Title
+            appLogo="/hbEvents/hbEventsIcon.png"
+            title="Hollow Brook Events"
+            fontFamily="Billabong"
+          />
+        }
+        description={<HBDesc />}
+        buttons={
+          <AppStoreBtn link="https://apps.apple.com/us/app/hollow-brook-events/id1562578409#?platform=iphone" />
+        }
+        preview={<HBPreview />}
       />
     </div>
   );

@@ -19,10 +19,12 @@ const TitleStyle = styled.div`
   font-size: 75px;
   font-family: ${(props) => props.fontFamily};
   color: white;
+  text-align: center;
 
   img {
     height: 75px;
     width: 75px;
+    margin-left: 20px;
     margin-right: 20px;
   }
 `;
