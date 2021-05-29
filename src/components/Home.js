@@ -12,7 +12,15 @@ function Home() {
             software solutions.
           </Description>
           <Buttons>
-            <ResumeBtn>Resume</ResumeBtn>
+            <ResumeBtn>
+              <a
+                href="https://firebasestorage.googleapis.com/v0/b/perspective-3adcf.appspot.com/o/resume_apd.pdf?alt=media&token=d36d2545-e935-48cb-9308-d36d3a74d601"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Resume
+              </a>
+            </ResumeBtn>
             <GitHubBtn>
               <a
                 href="https://github.com/demattosanthony?tab=repositories"
@@ -55,12 +63,14 @@ const Container = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("/home-background.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Content = styled.div`
-  height: 88%;
   display: flex;
-
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
@@ -75,14 +85,15 @@ const MetaData = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 900px) {
-    padding-top: 30px;
-    padding-left: 0px;
-  }
-
   @media (max-width: 1200px) {
     padding-left: 5vw;
-    width: 500px;
+    width: 500x;
+
+    @media (max-width: 900px) {
+      padding-top: 30px;
+      padding-left: 0px;
+      width: 100%;
+    }
   }
 `;
 const Name = styled.div`
@@ -124,12 +135,22 @@ const ResumeBtn = styled.div`
   padding: 20px;
   border: 1px solid #d3d3d3;
   letter-spacing: 1px;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
   transition: all 250ms;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
   &:hover {
     transform: scale(1.06);
     border-color: black;
+  }
+
+  @media (max-width: 900px) {
+    font-size: 12px;
   }
 `;
 
@@ -138,6 +159,14 @@ const GitHubBtn = styled(ResumeBtn)`
   img {
     height: 50px;
     width: 100px;
+  }
+
+  @media (max-width: 900px) {
+    img {
+      height: 30px;
+      width: 70px;
+      object-fit: scale-down;
+    }
   }
 `;
 
@@ -194,5 +223,9 @@ const DownArrow = styled.div`
     height: 40px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
   }
 `;
