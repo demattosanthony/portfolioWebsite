@@ -9,7 +9,7 @@ function PerDescription() {
       <br />
       <br />
       The goal of this project was to gain experiance building/deploying a full
-      stack mobile and web application that provide purpose to end users.
+      stack mobile and web application that provides purpose to end users.
       <br />
       <br />
       <h2>Technologies:</h2>

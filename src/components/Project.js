@@ -73,6 +73,10 @@ const Description = styled.div`
     padding: 0px;
     margin: 0px;
   }
+
+  @media (max-width: 768) {
+    width: 400px;
+  }
 `;
 
 const Links = styled.div`

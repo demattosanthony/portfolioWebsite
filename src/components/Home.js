@@ -8,8 +8,9 @@ function Home() {
         <MetaData>
           <Name>Anthony DeMattos</Name>
           <Description>
-            Motivaed Full Stack Developer interested in create top notche
-            software solutions.
+            Motivaed Full Stack Developer interested in creating top notche
+            software solutions. Passion for building beautiful user interfaces
+            and giving them life through creating a slick backend.
           </Description>
           <Buttons>
             <ResumeBtn>
@@ -79,9 +80,8 @@ const Content = styled.div`
 
 const MetaData = styled.div`
   padding-top: 25vh;
-  padding-left: 10vw;
-  width: 700px;
-
+  /* padding-left: 10vw; */
+  width: 50%;
   display: flex;
   flex-direction: column;
 
@@ -110,6 +110,8 @@ const Description = styled.div`
   padding-top: 10px;
   font-size: 20px;
   color: white;
+  width: 500px;
+
   font-family: -apple-system-body;
 `;
 
@@ -178,10 +180,12 @@ const LinkedInBtn = styled(GitHubBtn)`
 
 const ProfileImg = styled.div`
   padding-top: 15vh;
-  padding-left: 100px;
+  /* padding-left: 100px; */
   overflow: hidden;
   display: flex;
   justify-content: center;
+  width: 50%;
+  align-items: center;
 
   img {
     height: 450px;
@@ -201,6 +205,7 @@ const ProfileImg = styled.div`
       margin-left: 0px;
       padding-top: 20px;
       padding-left: 0px;
+      width: 100%;
 
       img {
         height: 300px;
