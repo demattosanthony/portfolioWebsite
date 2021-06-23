@@ -15,7 +15,7 @@ function Home() {
           <Buttons>
             <ResumeBtn>
               <a
-                href="https://firebasestorage.googleapis.com/v0/b/perspective-3adcf.appspot.com/o/resume_apd.pdf?alt=media&token=d36d2545-e935-48cb-9308-d36d3a74d601"
+                href="https://firebasestorage.googleapis.com/v0/b/perspective-3adcf.appspot.com/o/apd_resume.pdf?alt=media&token=0f9a2f9b-8a25-4c2f-b9f5-dd19970a4f18"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -84,10 +84,13 @@ const MetaData = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  margin-right: 50px;
+  align-items: center;
 
   @media (max-width: 1200px) {
     padding-left: 5vw;
     width: 500x;
+    margin-right: 00px;
 
     @media (max-width: 900px) {
       padding-top: 30px;
@@ -113,6 +116,10 @@ const Description = styled.div`
   width: 500px;
 
   font-family: -apple-system-body;
+
+  @media (max-width: 768px) {
+    width: 400px;
+  }
 `;
 
 const Buttons = styled.div`

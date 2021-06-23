@@ -33,7 +33,6 @@ const GifContainer = styled.div`
     display: flex;
     justify-content: center;
     border-radius: 8px;
-    background-color: red;
 
     img {
       width: 100%;

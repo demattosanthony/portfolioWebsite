@@ -74,7 +74,7 @@ const Description = styled.div`
     margin: 0px;
   }
 
-  @media (max-width: 768) {
+  @media (max-width: 768px) {
     width: 400px;
   }
 `;
