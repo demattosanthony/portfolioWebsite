@@ -8,7 +8,7 @@ function Home() {
         <MetaData>
           <Name>Anthony DeMattos</Name>
           <Description>
-            Motivaed Full Stack Developer interested in creating top notche
+            Motivated Full Stack Developer interested in creating top notche
             software solutions. Passion for building beautiful user interfaces
             and giving them life through creating a slick backend.
           </Description>
