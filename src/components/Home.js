@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
           <Buttons>
             <ResumeBtn>
               <a
-                href="https://firebasestorage.googleapis.com/v0/b/perspective-3adcf.appspot.com/o/apd_resume.pdf?alt=media&token=0f9a2f9b-8a25-4c2f-b9f5-dd19970a4f18"
+                href="https://docs.google.com/document/d/1FmVeuLu7rgfSA8bV_OPdTiy2d2z9DY8i/edit?usp=sharing&ouid=106913268900237636908&rtpof=true&sd=true"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -52,10 +52,10 @@ function Home() {
         <img src="/down-arrow.svg" alt="" />
       </DownArrow>
     </Container>
-  );
+  )
 }
 
-export default Home;
+export default Home
 
 const Container = styled.div`
   height: 100vh;
@@ -63,12 +63,12 @@ const Container = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("/home-background.png");
+  background-image: url('/home-background.png');
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-`;
+`
 
 const Content = styled.div`
   display: flex;
@@ -76,7 +76,7 @@ const Content = styled.div`
     flex-direction: column;
     align-items: center;
   }
-`;
+`
 
 const MetaData = styled.div`
   padding-top: 25vh;
@@ -98,7 +98,7 @@ const MetaData = styled.div`
       width: 100%;
     }
   }
-`;
+`
 const Name = styled.div`
   font-size: 60px;
   text-align: center;
@@ -106,7 +106,7 @@ const Name = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   letter-spacing: 2px;
   font-weight: bold;
-`;
+`
 
 const Description = styled.div`
   text-align: center;
@@ -120,13 +120,13 @@ const Description = styled.div`
   @media (max-width: 768px) {
     width: 400px;
   }
-`;
+`
 
 const Buttons = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 15px;
-`;
+`
 
 const ResumeBtn = styled.div`
   background-color: white;
@@ -161,7 +161,7 @@ const ResumeBtn = styled.div`
   @media (max-width: 900px) {
     font-size: 12px;
   }
-`;
+`
 
 const GitHubBtn = styled(ResumeBtn)`
   background-color: white;
@@ -177,13 +177,13 @@ const GitHubBtn = styled(ResumeBtn)`
       object-fit: scale-down;
     }
   }
-`;
+`
 
 const LinkedInBtn = styled(GitHubBtn)`
   img {
     height: 60px;
   }
-`;
+`
 
 const ProfileImg = styled.div`
   padding-top: 15vh;
@@ -220,7 +220,7 @@ const ProfileImg = styled.div`
       }
     }
   }
-`;
+`
 
 const DownArrow = styled.div`
   align-items: center;
@@ -240,4 +240,4 @@ const DownArrow = styled.div`
   @media (max-width: 900px) {
     width: 100%;
   }
-`;
+`
