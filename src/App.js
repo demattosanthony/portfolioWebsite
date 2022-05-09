@@ -1,25 +1,24 @@
-import "./App.css";
-import styled from "styled-components";
-import Home from "./components/Home";
-import Project from "./components/Project";
+import './App.css'
+import styled from 'styled-components'
+import Home from './components/Home'
+import Project from './components/Project'
 
-import Title from "./components/Title";
-import SourceCodeBtn from "./components/SourceCodeBtn";
-import VisitWebsiteBtn from "./components/VisitWebsiteBtn";
-import AppStoreBtn from "./components/AppStoreBtn";
+import Title from './components/Title'
+import SourceCodeBtn from './components/SourceCodeBtn'
+import VisitWebsiteBtn from './components/VisitWebsiteBtn'
+import AppStoreBtn from './components/AppStoreBtn'
 
-import PerDescription from "./components/Perspective/PerDescription";
-import PerPreview from "./components/Perspective/PerPreview";
-import PerButtons from "./components/Perspective/PerButtons";
+import PerDescription from './components/Perspective/PerDescription'
+import PerPreview from './components/Perspective/PerPreview'
 
-import OSDesc from "./components/OpenSpot/OSDesc";
-import OSPreview from "./components/OpenSpot/OSPreview";
+import OSDesc from './components/OpenSpot/OSDesc'
+import OSPreview from './components/OpenSpot/OSPreview'
 
-import SFDesc from "./components/ShareAFile/SFDesc";
-import SFPreview from "./components/ShareAFile/SFPreview";
+import SFDesc from './components/ShareAFile/SFDesc'
+import SFPreview from './components/ShareAFile/SFPreview'
 
-import HBDesc from "./components/HBEvents/HBDesc";
-import HBPreview from "./components/HBEvents/HBPreview";
+import HBDesc from './components/HBEvents/HBDesc'
+import HBPreview from './components/HBEvents/HBPreview'
 
 function App() {
   return (
@@ -35,7 +34,7 @@ function App() {
             />
           }
           description={<PerDescription />}
-          buttons={<PerButtons />}
+          // buttons={<PerButtons />}
           preview={<PerPreview />}
         />
         <Project
@@ -68,11 +67,11 @@ function App() {
         />
       </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
 
 const Container = styled.div`
   height: 100vh;
-`;
+`
